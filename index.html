@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,29 @@
 	<link rel="stylesheet" href="static/css/styles.css">
 	<title>Taniti Island Prototype</title>
 </head>
+
 <body>
+	<nav class="navbar">
+		<button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+			aria-controls="nav-links">
+
+			<span></span>
+			<span></span>
+			<span></span>
+
+		</button>
+
+		<ul class="nav-links" id="nav-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Explore</a></li>
+			<li><a href="#">Excursions</a></li>
+			<li><a href="#">My Trips</a></li>
+			<li><a href="#">Account</a></li>
+		</ul>
+	</nav>
 	<header>
 		<h1>Welcome to Taniti Island</h1>
-		<nav aria-label="Main navigation">
-			<a href="#home">Home</a>
-		</nav>
+		<a href="#" class="logo">Island Escape</a>
 	</header>
 
 	<main id="home">
@@ -33,5 +51,5 @@
 	<footer>
 		<p>&copy; 2025 Taniti Island Prototype</p>
 	</footer>
-</body>
-</html>
+	<script src="static/js/script.js"></script>
+	</html>
