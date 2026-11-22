@@ -1,55 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="A simple HTML website">
-	<link rel="stylesheet" href="static/css/styles.css">
-	<title>Taniti Island Prototype</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Taniti Island and plan your visit to a tropical paradise in the Pacific.">
+  <title>Welcome | Taniti Island Tourism</title>
+
+  <!-- Poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
-
 <body>
-	<nav class="navbar">
-		<button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"
-			aria-controls="nav-links">
+  <header class="site-header">
+    <div class="container">
+      <a class="site-brand" href="index.html" aria-label="Taniti Island Tourism home">
+        <span class="site-logo">Taniti Island</span>
+        <span class="site-tagline">Tourism</span>
+      </a>
 
-			<span></span>
-			<span></span>
-			<span></span>
+      <nav aria-label="Main navigation">
+        <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="food-dining.html">Food &amp; Dining</a></li>
+          <li><a href="lodging-guide.html">Lodging</a></li>
+          <li><a href="activities-guide.html">Activities</a></li>
+          <li><a href="transportation-guide.html">Transportation</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-		</button>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="welcome-heading">
+      <div class="hero-content">
+        <h1 id="welcome-heading">Welcome to Taniti Island!</h1>
+        <p>A tropical paradise in the Pacific.</p>
+        <a class="btn btn-primary" href="plan-trip.html">Book Your Trip Today</a>
+      </div>
+    </section>
 
-		<ul class="nav-links" id="nav-links">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Explore</a></li>
-			<li><a href="#">Excursions</a></li>
-			<li><a href="#">My Trips</a></li>
-			<li><a href="#">Account</a></li>
-		</ul>
-	</nav>
-	<header>
-		<h1>Welcome to Taniti Island</h1>
-		<a href="#" class="logo">Island Escape</a>
-	</header>
+    <section class="section" aria-labelledby="island-intro-heading">
+      <div class="container">
+        <h2 class="section-title" id="island-intro-heading">Discover Taniti Island</h2>
+        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Learn what the island has to offer.</p>
 
-	<main id="home">
-		<section>
-			<h2></h2>
-			<p></p>
-		</section>
-		<section>
-			<h2></h2>
-			<p></p>
-		</section>
-		<section>
-			<h2></h2>
-			<p></p>
-		</section>
-	</main>
+        <nav aria-label="Explore island categories">
+          <ul class="category-links">
+            <li><a href="activities-guide.html#beaches"><img src="static/images/beach.png" alt="">Beaches</a></li>
+            <li><a href="activities-guide.html#nature"><img src="static/images/nature.png" alt="">Nature</a></li>
+            <li><a href="food-dining.html"><img src="static/images/dining.png" alt="">Dining</a></li>
+            <li><a href="activities-guide.html"><img src="static/images/more.png" alt="">More</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary explore" href="food-dining.html">Explore The Island</a>
+      </div>
+    </section>
+  </main>
 
-	<footer>
-		<p>&copy; 2025 Taniti Island Prototype</p>
-	</footer>
-	<script src="static/js/script.js"></script>
-	</html>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span>Taniti Island Tourism</span></p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faq.html">F.A.Q.</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="static/js/script.js"></script>
+</body>
+</html>

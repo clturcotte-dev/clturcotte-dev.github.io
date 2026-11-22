@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Taniti Island and plan your visit.">
+  <title>Traveler and payment | Taniti Island Tourism</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+    <a class="site-brand" href="index.html" aria-label="Taniti Island Tourism home">
+      <span class="site-logo">Taniti Island</span>
+      <span class="site-tagline">Tourism</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="food-dining.html">Food & Dining</a></li>
+        <li><a href="lodging-guide.html">Lodging</a></li>
+        <li><a href="activities-guide.html">Activities</a></li>
+        <li><a href="transportation-guide.html">Transportation</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <header class="section"><p class="section-description">Step 6 of 7 &bull; Plan your visit</p><h1 class="section-title">Traveler and payment</h1></header>
+    <ol aria-label="Booking progress"><li>Plan your trip</li><li>Choose lodging</li><li>Choose activities</li><li>Island transportation</li><li>Review itinerary</li><li aria-current="step">Traveler and payment</li><li>Booking confirmed</li></ol>
+    <form action="booking-confirmed.html" method="get">
+      <fieldset class="form-group"><legend>Traveler information</legend>
+        <label for="full-name">Full name</label><input class="form-control" id="full-name" name="full-name" type="text" autocomplete="name">
+        <label for="email">Email address</label><input class="form-control" id="email" name="email" type="email" autocomplete="email">
+      </fieldset>
+      <fieldset class="form-group"><legend>Payment information</legend>
+        <label for="card-number">Card number</label><input class="form-control" id="card-number" name="card-number" type="text" inputmode="numeric" autocomplete="cc-number">
+        <label for="expiry">Expiry</label><input class="form-control" id="expiry" name="expiry" type="text" placeholder="MM / YY" autocomplete="cc-exp">
+        <label for="security-code">Security code</label><input class="form-control" id="security-code" name="security-code" type="text" inputmode="numeric" autocomplete="cc-csc">
+      </fieldset>
+      <section class="itinerary" aria-labelledby="summary-heading"><h2 class="section-title" id="summary-heading">Trip summary</h2><p class="section-description">Selected trip details and pricing will appear here.</p><p><strong>Total:</strong> $—</p></section>
+      <label><input type="checkbox" name="terms"> I accept the booking terms</label>
+      <button class="btn btn-primary" type="submit">Confirm booking</button>
+    </form>
+    <a class="btn btn-outline" href="review-itinerary.html">Back to itinerary</a>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+    <p>&copy; <span>Taniti Island Tourism</span></p>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faq.html">Frequently asked questions</a></li>
+      </ul>
+    </nav>
+    </div>
+  </footer>
+  <script src="static/js/script.js"></script>
+</body>
+</html>
