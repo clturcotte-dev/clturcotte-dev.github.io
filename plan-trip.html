@@ -43,7 +43,7 @@
     </ol>
     <section class="section" aria-labelledby="trip-details-heading">
       <h2 class="section-title" id="trip-details-heading">Trip details</h2>
-      <form class="search-panel" action="choose-lodging.html" method="get">
+      <form id="trip-details-form" class="search-panel" action="choose-lodging.html" method="get">
         <fieldset class="form-group">
           <legend>Travel dates</legend>
           <label for="arrival-date">Arrival date</label>
@@ -58,9 +58,11 @@
           <label for="rooms">Rooms</label>
           <select class="form-control" id="rooms" name="rooms"><option value="">Select rooms</option><option>1</option><option>2</option><option>3</option></select>
         </fieldset>
-        <button class="btn btn-primary" type="submit">Continue to lodging</button>
       </form>
-      <a class="btn btn-outline back-button" >Back to island guide</a>
+      <div class="action-buttons">
+        <a class="btn btn-outline" href="index.html">&larr; Back to island guide</a>
+        <button class="btn btn-primary" type="submit" form="trip-details-form">Continue to lodging &rarr;</button>
+      </div>
     </section>
   </main>
 

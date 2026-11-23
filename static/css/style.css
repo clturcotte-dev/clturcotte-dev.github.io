@@ -59,6 +59,24 @@ a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
 
+form:not(.search-panel) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+form fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+form legend {
+    margin-bottom: .4rem;
+    font-weight: 600;
+}
+
 /* Main Layout */
 .container {
     width: 100%;
@@ -174,6 +192,7 @@ button { cursor: pointer; }
 /* Buttons */
 .btn {
     display: inline-flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     padding: .85rem 1.5rem;
@@ -187,6 +206,21 @@ button { cursor: pointer; }
 .btn-primary:hover { background: var(--primary-dark); }
 .btn-secondary { background: var(--secondary); color: var(--text-primary); }
 .btn-outline { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
+
+form .btn {
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.action-buttons .btn-primary { margin-left: auto; }
 
 /* Card metadata */
 .card-meta {

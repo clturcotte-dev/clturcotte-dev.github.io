@@ -13,6 +13,12 @@
     top: 2rem;
 }
 
+.search-panel + .action-buttons {
+    position: relative;
+    top: 2rem;
+    margin: 1rem 1rem 0;
+}
+
 .form-group { display: flex; flex-direction: column; gap: .4rem; }
 .form-group label { font-size: .8rem; font-weight: 600; }
 
@@ -30,11 +36,6 @@
     box-shadow: 0 0 0 3px rgba(8,127,140,.12);
 }
 
-.back-button {
-    position: relative;
-    top: 3rem;
-}
-
 @media (min-width: 600px) {
     .search-panel { flex-direction: row; flex-wrap: wrap; }
     .search-panel .form-group { flex: 1; min-width: 150px; }
@@ -42,4 +43,5 @@
 
 @media (min-width: 900px) {
     .search-panel { max-width: 1050px; margin: -2rem auto 0; padding: 1.5rem; flex-wrap: nowrap; }
+    .search-panel + .action-buttons { max-width: 1050px; margin: 1rem auto 0; }
 }
