@@ -321,28 +321,6 @@ button { cursor: pointer; }
 .footer a:hover { color: var(--secondary); }
 .footer .container { display: flex; flex-direction: column; gap: 1.25rem; }
 
-/* Homepage category links */
-.category-links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: .75rem;
-    list-style: none;
-}
-
-.category-links a {
-    display: block;
-    padding: 1rem .75rem;
-    text-align: center;
-    background: var(--surface);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    font-weight: 600;
-    color: var(--primary-dark);
-    transition: var(--transition);
-}
-
-.category-links a:hover { background: var(--primary); color: white; }
-
 /* 13. Tablet Layout */
 @media (min-width: 600px) {
     .container { padding: 0 1.5rem; }
@@ -350,7 +328,6 @@ button { cursor: pointer; }
     .search-panel { flex-direction: row; flex-wrap: wrap; }
     .search-panel .form-group { flex: 1; min-width: 150px; }
     .footer-links { flex-direction: row; flex-wrap: wrap; }
-    .category-links { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 /* 14. Desktop Layout */
