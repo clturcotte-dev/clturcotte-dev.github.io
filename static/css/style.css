@@ -171,63 +171,7 @@ button { cursor: pointer; }
     }
 }
 
-/* 5. Hero Section */
-.hero {
-    min-height: 450px;
-    padding: 4rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background:
-        linear-gradient(rgba(0, 40, 45, .35), rgba(0, 40, 45, .55)),
-        url('../images/island-hero.jpg') center/cover no-repeat;
-    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-}
-
-.hero-content { max-width: 650px; }
-
-.hero h1 {
-    font-size: clamp(2rem, 8vw, 3.5rem);
-    line-height: 1.15;
-    margin-bottom: 1rem;
-}
-
-.hero p { font-size: 1rem; margin-bottom: 2rem; }
-
-/* 6. Search / Trip Planner */
-.search-panel {
-    background: var(--surface);
-    padding: 1.25rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: -2rem 1rem 0;
-    position: relative;
-    z-index: 2;
-}
-
-.form-group { display: flex; flex-direction: column; gap: .4rem; }
-.form-group label { font-size: .8rem; font-weight: 600; }
-
-.form-control {
-    width: 100%;
-    padding: .85rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--surface);
-    outline: none;
-}
-
-.form-control:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(8,127,140,.12);
-}
-
-/* 7. Buttons */
+/* Buttons */
 .btn {
     display: inline-flex;
     justify-content: center;
@@ -241,33 +185,10 @@ button { cursor: pointer; }
 
 .btn-primary { background: var(--primary); color: white; }
 .btn-primary:hover { background: var(--primary-dark); }
-.explore {
-    display: flex;
-    width: fit-content;
-    margin: 1rem auto 0;
-    font-size: 1.05rem;
-    padding: 1rem 2rem;
-}
 .btn-secondary { background: var(--secondary); color: var(--text-primary); }
 .btn-outline { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
 
-/* 8. Destination / Excursion Cards */
-.card-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
-
-.card {
-    background: var(--surface);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-}
-
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.card-image { width: 100%; height: 200px; object-fit: cover; }
-.card-content { padding: 1.25rem; }
-.card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: .4rem; }
-.card-description { color: var(--text-secondary); font-size: .9rem; }
-
+/* Shared card metadata */
 .card-meta {
     display: flex;
     justify-content: space-between;
@@ -278,20 +199,7 @@ button { cursor: pointer; }
 
 .price { color: var(--primary); font-weight: 700; }
 
-/* 9. Itinerary Planner */
-.itinerary { background: var(--surface); border-radius: var(--radius-lg); padding: 1.25rem; }
-
-.itinerary-day {
-    border-left: 3px solid var(--primary-light);
-    padding: 0 0 1.5rem 1rem;
-    margin-left: .5rem;
-}
-
-.itinerary-day:last-child { border-left-color: transparent; }
-.itinerary-day h3 { font-size: 1rem; margin-bottom: .5rem; }
-.itinerary-item { padding: .75rem; margin-top: .5rem; background: var(--background); border-radius: var(--radius-sm); }
-
-/* 10. Badges / Tags */
+/* Badges / Tags */
 .badge {
     display: inline-block;
     padding: .3rem .7rem;
@@ -304,11 +212,11 @@ button { cursor: pointer; }
 
 .badge-featured { background: rgba(244,198,106,.3); color: #795512; }
 
-/* 11. User Profile / Account */
+/* User Profile / Account */
 .profile-panel { background: var(--surface); padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
 .profile-avatar { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; }
 
-/* 12. Footer */
+/* Footer */
 .footer {
     background: var(--text-primary);
     color: white;
@@ -321,27 +229,21 @@ button { cursor: pointer; }
 .footer a:hover { color: var(--secondary); }
 .footer .container { display: flex; flex-direction: column; gap: 1.25rem; }
 
-/* 13. Tablet Layout */
+/* Tablet Layout */
 @media (min-width: 600px) {
     .container { padding: 0 1.5rem; }
-    .card-grid { grid-template-columns: repeat(2, 1fr); }
-    .search-panel { flex-direction: row; flex-wrap: wrap; }
-    .search-panel .form-group { flex: 1; min-width: 150px; }
     .footer-links { flex-direction: row; flex-wrap: wrap; }
 }
 
-/* 14. Desktop Layout */
+/* Desktop Layout */
 @media (min-width: 900px) {
     .container { padding: 0 var(--desktop-padding); }
     .nav-links { display: flex; }
-    .hero { min-height: 550px; border-radius: var(--radius-lg); margin: 1rem; }
-    .card-grid { grid-template-columns: repeat(3, 1fr); }
     .section { padding: 4rem 0; }
-    .search-panel { max-width: 1050px; margin: -2rem auto 0; padding: 1.5rem; flex-wrap: nowrap; }
     .footer .container { flex-direction: row; justify-content: space-between; align-items: center; }
 }
 
-/* 15. Accessibility */
+/* Accessibility */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,

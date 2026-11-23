@@ -1,1 +1,19 @@
-/* Page-specific styles for traveler-payment.html */
+/* Traveler information and trip summary */
+.form-group { display: flex; flex-direction: column; gap: .4rem; }
+.form-group label { font-size: .8rem; font-weight: 600; }
+
+.form-control {
+    width: 100%;
+    padding: .85rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(8,127,140,.12);
+}
+
+.itinerary { background: var(--surface); border-radius: var(--radius-lg); padding: 1.25rem; }

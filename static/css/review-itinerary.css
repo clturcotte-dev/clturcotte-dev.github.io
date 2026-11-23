@@ -1,1 +1,11 @@
-/* Page-specific styles for review-itinerary.html */
+/* Itinerary review */
+.itinerary { background: var(--surface); border-radius: var(--radius-lg); padding: 1.25rem; }
+.itinerary-day {
+    border-left: 3px solid var(--primary-light);
+    padding: 0 0 1.5rem 1rem;
+    margin-left: .5rem;
+}
+
+.itinerary-day:last-child { border-left-color: transparent; }
+.itinerary-day h3 { font-size: 1rem; margin-bottom: .5rem; }
+.itinerary-item { padding: .75rem; margin-top: .5rem; background: var(--background); border-radius: var(--radius-sm); }
