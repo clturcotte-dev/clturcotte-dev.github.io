@@ -222,6 +222,52 @@ form .btn {
 
 .action-buttons .btn-primary { margin-left: auto; }
 
+.button-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+    list-style: none;
+}
+
+.button-links a {
+    display: block;
+    padding: 1rem .75rem;
+    text-align: center;
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    font-weight: 600;
+    color: var(--primary-dark);
+    transition: var(--transition);
+}
+
+.button-links a:hover { background: var(--primary); color: white; }
+
+.page-navigation-content {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-navigation .button-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-navigation .button-links li {
+    flex: 0 1 11rem;
+}
+
+@media (max-width: 599px) {
+    .page-navigation .button-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: column;
+    }
+}
+
 /* Card metadata */
 .card-meta {
     display: flex;
@@ -267,6 +313,7 @@ form .btn {
 @media (min-width: 600px) {
     .container { padding: 0 1.5rem; }
     .footer-links { flex-direction: row; flex-wrap: wrap; }
+    .button-links { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 /* Desktop Layout */
