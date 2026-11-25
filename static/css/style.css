@@ -222,6 +222,19 @@ form .btn {
 
 .action-buttons .btn-primary { margin-left: auto; }
 
+@media (max-width: 599px) {
+    .action-buttons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .action-buttons .btn {
+        align-self: center;
+    }
+
+    .action-buttons .btn-primary { margin-left: 0; }
+}
+
 .button-links {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
