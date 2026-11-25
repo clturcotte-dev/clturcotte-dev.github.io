@@ -34,6 +34,33 @@
 
   <main id="main-content" class="container">
     <header class="section"><p class="section-description">Step 3 of 7 &bull; Plan your visit</p><h1 class="section-title">Choose activities</h1></header>
+    <details class="filter-menu">
+      <summary class="btn btn-outline">Filter activities</summary>
+      <div class="filter-menu-panel">
+        <h2>Filter activities</h2>
+        <fieldset>
+          <legend>Activity type</legend>
+          <label><input type="checkbox"> Outdoor adventures</label>
+          <label><input type="checkbox"> Cultural experiences</label>
+          <label><input type="checkbox"> Food and entertainment</label>
+        </fieldset>
+        <label for="activity-duration-filter">Duration</label>
+        <select id="activity-duration-filter">
+          <option>Any duration</option>
+          <option>Under 2 hours</option>
+          <option>2-4 hours</option>
+          <option>Full day</option>
+        </select>
+        <label for="activity-price-filter">Price</label>
+        <select id="activity-price-filter">
+          <option>Any price</option>
+          <option>Free</option>
+          <option>Under $50</option>
+          <option>$50 or more</option>
+        </select>
+        <p class="filter-menu-note">Filter choices won't change results yet.</p>
+      </div>
+    </details>
     <ol aria-label="Booking progress">
       <li><a href="plan-trip.html">Plan your trip</a></li><li>Choose lodging</li><li aria-current="step">Choose activities</li><li>Island transportation</li><li>Review itinerary</li><li>Traveler and payment</li><li>Booking confirmed</li>
     </ol>

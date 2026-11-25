@@ -34,6 +34,27 @@
 
   <main id="main-content" class="container">
     <header class="section"><p class="section-description">Step 4 of 7 &bull; Plan your visit</p><h1 class="section-title">Island transportation</h1></header>
+    <details class="filter-menu">
+      <summary class="btn btn-outline">Filter transportation</summary>
+      <div class="filter-menu-panel">
+        <h2>Filter transportation</h2>
+        <fieldset>
+          <legend>Transportation type</legend>
+          <label><input type="checkbox"> Rental car</label>
+          <label><input type="checkbox"> Shuttle or taxi</label>
+          <label><input type="checkbox"> Bicycle</label>
+          <label><input type="checkbox"> Arrange my own</label>
+        </fieldset>
+        <label for="transport-price-filter">Price</label>
+        <select id="transport-price-filter">
+          <option>Any price</option>
+          <option>Free</option>
+          <option>Under $50</option>
+          <option>$50 or more</option>
+        </select>
+        <p class="filter-menu-note">Filter choices won't change results yet.</p>
+      </div>
+    </details>
     <ol aria-label="Booking progress">
       <li><a href="plan-trip.html">Plan your trip</a></li><li>Choose lodging</li><li>Choose activities</li><li aria-current="step">Island transportation</li><li>Review itinerary</li><li>Traveler and payment</li><li>Booking confirmed</li>
     </ol>
